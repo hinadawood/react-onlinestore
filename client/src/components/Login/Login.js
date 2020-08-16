@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import { Redirect } from "react-router-dom";
 import { Form, Button } from "react-bootstrap";
 
-class Login extends Component {
+export class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -74,14 +74,14 @@ class Login extends Component {
   }
 }
 
-function mapStateToProps(state) {
+export function mapStateToProps(state) {
   return {
     signin: state.login.signin,
     isLoginError: state.login.isLoginError,
   };
 }
 
-function mapDispatchToProps(dispatch) {
+export function mapDispatchToProps(dispatch) {
   return {
     performLogin: (username, password) => {
       dispatch(performLogin(username, password));
