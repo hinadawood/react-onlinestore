@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import CartItem from './CartItem';
 import './cart.scss';
 
-class Cart extends Component {
+export class Cart extends Component {
 
   constructor(props){
     super(props);
@@ -12,7 +12,7 @@ class Cart extends Component {
   }
 
   displayCart(){
-    this.props.displayCart(false);
+    this.props.displayCart();
   }
 
   render(){
@@ -43,7 +43,7 @@ class Cart extends Component {
   }
 }
 
-function mapStateToProps(state){
+export function mapStateToProps(state){
   return {
     cartIsDisplayed: state.cart.cartIsDisplayed,
     selectedItems: state.cart.selectedItems,
@@ -51,10 +51,10 @@ function mapStateToProps(state){
   }
 }
 
-function mapDispatchToProps(dispatch){
+export function mapDispatchToProps(dispatch){
   return {
-    displayCart: (val) => {
-      dispatch(displayCart(val));
+    displayCart: () => {
+      dispatch(displayCart());
     }
   }
 }
