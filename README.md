@@ -36,7 +36,11 @@ An order portal application that allows customers to login and view a list of pr
 
 
 ## Unit testing
-Run `npm test` for unit testing the code. 
+Run `npm test` for unit testing the code.
+- cd client
+- npm test
+#### Have written variety of testcases to test rendering of component, simulation of events, mocking API call, snapshot testing, redux action creators and reducer testing. The tests have been written in file Login.test.js, Cart.test.js, loginReducer.test.js, catalogActions.test.js
+
 
 
 ## Functionality
