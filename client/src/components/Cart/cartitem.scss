@@ -1,0 +1,63 @@
+.c-onlineshop-cart-item {
+  padding: 5px;
+  background-color: white;
+  border-top: 1px solid #ccc;
+
+  .c-onlineshop-cart-item__close-icon {
+    color: grey;
+    float: right;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  &-info {
+    clear: both;
+    color: #212529;
+    &-summary {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+
+      &__name {
+        padding: 10px;
+      }
+
+      &__image {
+        width: 100px;
+      }
+    }
+
+    &-pricing {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+
+      &-qty {
+        flex: 1 0;
+        display: none;
+        @media (min-width: 450px) {
+          display: block;
+        }
+      }
+      &-calc {
+        font-size: 1.2rem;
+        font-weight: 500;
+
+        &__for::before {
+          content: " "
+        }
+
+        &__for::after {
+          content: " "
+        }
+
+        &__total-price::before {
+          content: " = "
+        }
+
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.c-onlineshop-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #303030;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  width: 100%;
+  height: 70px;
+
+  &-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+
+    &__link {
+      cursor: pointer;
+      &:hover {
+        color: #f2a900;
+      }
+    }
+
+    &__link.company-name::before{
+      content: "@"
+    }
+
+    &__link:not(:last-child)::after {
+      content: "|";
+      padding: 5px;
+    }
+  }
+}
