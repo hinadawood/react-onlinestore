@@ -69,5 +69,6 @@ Run `npm test` for unit testing the code.
 - You can remove items from the cart
 - When you add or remove items from cart, each items total price and total cart price is updated
 - Multiple env files are maintained to pick the server url for local, dev and prod env.
+- I have tested the web app in chrome and firefox.
 
 
