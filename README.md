@@ -15,19 +15,25 @@ An order portal application that allows customers to login and view a list of pr
 ## Usage
 ### Prerequisite - 
 
-#### Please note you need latest node version (14.8.0) as some latest node packages used in the app, installs and runs properly only on latest node.
+#### Please note you need current node version (14.8.0) as some latest node packages used in the app, installs and runs properly only on latest node.
 
 #### Install node, npm and git from below links, if you don't already have it on your system.
-- https://nodejs.org/en/download/
+- https://nodejs.org/en/download/current/
 - https://www.npmjs.com/get-npm
 - https://git-scm.com/downloads
 
 #### Clone the git repository on your local machine - https://github.com/hinadawood/react-onlinestore.git
+
+### Directory structure after you clone the git repository
+react-onlinestore (folder)
+ -client  (folder containing client code)
+ -server  (folder containing server code)
+ -README.md (file)
   
 ### Run the server -
 - Make sure no application is running on port 8080
 - Open a command line window
-- cd server
+- cd react-onlinestore/server
 - npm install
 - npm start
 - The server is now running on http://localhost:8080/
@@ -35,7 +41,8 @@ An order portal application that allows customers to login and view a list of pr
 ### Run the client -
 - Make sure no application is running on port 3000
 - Open another command line window
-- cd client
+- Go to the folder where you have cloned the git repository
+- cd react-onlinestore/client
 - npm install
 - npm start
 - The client is now running on http://localhost:3000/login
@@ -43,10 +50,9 @@ An order portal application that allows customers to login and view a list of pr
 
 ## Unit testing
 Run `npm test` for unit testing the code.
-- cd client
+- cd react-onlinestore/client
 - npm test
 #### Have written variety of testcases to test rendering of component, simulation of events, mocking API call, snapshot testing, redux action creators and reducer testing. The tests have been written in file Login.test.js, Cart.test.js, loginReducer.test.js, catalogActions.test.js
-
 
 
 ## Functionality
