@@ -4,24 +4,28 @@
 An order portal application that allows customers to login and view a list of products and add it to a shopping cart
 
 ## Important Note ##
-##### Login details -
+### Login details -
 - username: hina
 - password: password
-##### The online shopping web app is completely responsive and adapts to screen sizes
+### The online shopping web app is completely responsive and adapts to screen sizes
 
-##### The state management is implemented through Redux.
+### The state management is implemented through Redux.
 
 
 ## Usage
-Prerequisite - Install node, npm and git, if you don't already have it on your system.
-### Please note you will need latest node version as some packages have dependency on latest node.
+### Prerequisite - 
+
+#### Please note you need latest node version (14.8.0) as some latest node packages used in the app, installs and runs properly only on latest node.
+
+#### Install node, npm and git from below links, if you don't already have it on your system.
 - https://nodejs.org/en/download/
 - https://www.npmjs.com/get-npm
 - https://git-scm.com/downloads
 
-### Clone the git repository on your local machine - https://github.com/hinadawood/react-onlinestore.git
+#### Clone the git repository on your local machine - https://github.com/hinadawood/react-onlinestore.git
   
 ### Run the server -
+- Make sure no application is running on port 8080
 - Open a command line window
 - cd server
 - npm install
@@ -29,6 +33,7 @@ Prerequisite - Install node, npm and git, if you don't already have it on your s
 - The server is now running on http://localhost:8080/
 
 ### Run the client -
+- Make sure no application is running on port 3000
 - Open another command line window
 - cd client
 - npm install
