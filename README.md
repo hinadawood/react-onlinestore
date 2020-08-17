@@ -43,7 +43,6 @@ react-onlinestore (folder)
 ### Run the client -
 - Make sure no application is running on port 3000
 - Open another command line window
-- Go to the folder where you have cloned the git repository
 - cd react-onlinestore/client
 - npm install
 - npm start
