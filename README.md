@@ -25,10 +25,12 @@ An order portal application that allows customers to login and view a list of pr
 #### Clone the git repository on your local machine - https://github.com/hinadawood/react-onlinestore.git
 
 ### Directory structure after you clone the git repository
+<pre>
 react-onlinestore (folder)
  -client  (folder containing client code)
  -server  (folder containing server code)
  -README.md (file)
+</pre>
   
 ### Run the server -
 - Make sure no application is running on port 8080
