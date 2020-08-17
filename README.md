@@ -11,7 +11,7 @@ An order portal application that allows customers to login and view a list of pr
 
 ### The state management is implemented through Redux.
 
-### I have tested thoroughly on Chrome. Also works fine on Firefox and Safari.
+### I have tested thoroughly on Chrome (v84.0). Also works fine on Firefox and Safari.
 
 
 ## Usage
