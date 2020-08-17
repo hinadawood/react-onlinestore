@@ -14,12 +14,12 @@ An order portal application that allows customers to login and view a list of pr
 
 ## Usage
 Prerequisite - Install node, npm and git, if you don't already have it on your system.
-Please note you will need node version 14.5 or higher.
+### Please note you will need latest node version as some packages have dependency on latest node.
 - https://nodejs.org/en/download/
 - https://www.npmjs.com/get-npm
 - https://git-scm.com/downloads
 
-Clone the git repository on your local machine - https://github.com/hinadawood/react-onlinestore.git
+### Clone the git repository on your local machine - https://github.com/hinadawood/react-onlinestore.git
   
 ### Run the server -
 - Open a command line window
