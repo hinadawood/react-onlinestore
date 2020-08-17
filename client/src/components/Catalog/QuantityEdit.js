@@ -42,19 +42,25 @@ const QuantityEdit = (props) => {
     newQntyValue = newQntyValue ? parseInt(newQntyValue) : ""
     if (isValid(newQntyValue)){
       setQnty(newQntyValue);
-      dispatch(updateCartItem(props.id, newQntyValue))
+      if (newQntyValue === 0) {
+        dispatch(removeCartItem(props.id));
+        dispatch(updateCartTotal()); 
+      } else {
+        dispatch(updateCartItem(props.id, newQntyValue));
+        dispatch(updateCartTotal());
+      }
     }
   }
 
   return(
     <div className="c-onlineshop-quantity-editor">
-      <button class="c-onlineshop-quantity-editor__incr-btn btn btn-primary" 
+      <button className="c-onlineshop-quantity-editor__incr-btn btn btn-primary" 
          onClick={incCartItem}>
            <i className="fa fa-plus icon"></i>
       </button>
-      <input class="c-onlineshop-quantity-editor__input" size="4"
+      <input className="c-onlineshop-quantity-editor__input" size="4"
         onChange={handleChange} value={qnty}/>
-      <button class="c-onlineshop-quantity-editor__decr-btn btn btn-primary"
+      <button className="c-onlineshop-quantity-editor__decr-btn btn btn-primary"
         onClick={decCartItem}>
           <i className="fa fa-minus icon"></i>
       </button>

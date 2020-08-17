@@ -40,7 +40,13 @@ export default function cartReducer(state = {
     case UPDATE_CART_TOTAL:
       return {
         ...state,
-        total: (state.selectedItems.reduce((sum, item) => sum + parseInt(item.qnty) * parseFloat(item.price), 0)).toFixed(2)
+        total: (state.selectedItems.reduce((sum, item) => {
+          let quantity = item.qnty
+          if (quantity === ""){
+            quantity = 0
+          }
+          return sum + parseInt(quantity) * parseFloat(item.price)
+        }, 0)).toFixed(2)
       }
     default:
     return state;
