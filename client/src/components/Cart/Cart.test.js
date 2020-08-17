@@ -41,7 +41,7 @@ describe('test suite for Cart render ', () => {
     });
 
     it('should test number of CartItem elements equals to items in cart', () => {
-        expect(component.find('CartItem').length).toEqual(2);
+        expect(component.find('CartItem').length).toEqual(component.instance().props.selectedItems.length);
     });
 
     it('should test Cart has close-icon class for slider', () => {

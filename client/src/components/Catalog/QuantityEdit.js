@@ -41,7 +41,6 @@ const QuantityEdit = (props) => {
     let newQntyValue = event.target.value;
     newQntyValue = newQntyValue ? parseInt(newQntyValue) : ""
     if (isValid(newQntyValue)){
-      setQnty(newQntyValue);
       if (newQntyValue === 0) {
         dispatch(removeCartItem(props.id));
         dispatch(updateCartTotal()); 
